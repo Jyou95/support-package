@@ -9,7 +9,7 @@
 	<title>Contact Us</title>
 	<body style="text-align:center">
 		<h1>
-			Contact Us any time
+			Contact Us any time ABC
 		</h1>
 		<form action="{{route('contact')}}" method="post">
 			@csrf
