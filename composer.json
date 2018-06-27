@@ -8,5 +8,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "Devdojo\\Contact\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devdojo\\Contact\\ContactServiceProvider"
+            ],
+        }
+    },
 }
