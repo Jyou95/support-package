@@ -1,10 +1,10 @@
 <?php
 
-namespace Devdojo\Contact;
+namespace Sixturbo\Support;
 
 use Illuminate\Support\ServiceProvider;
 
-class ContactServiceProvider extends ServiceProvider
+class SupportServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -23,15 +23,15 @@ class ContactServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Devdojo\Contact\Http\Controllers\ContactController');
-        $this->loadViewsFrom(__DIR__.'/views', 'contact');
+        //$this->app->make('Devdojo\Contact\Http\Controllers\ContactController');
+        $this->loadViewsFrom(__DIR__.'/views', 'faq');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->mergeConfigFrom(
-            __DIR__.'/config/contact.php',
-            'contact'
+            __DIR__.'/config/faq.php',
+            'faq'
         );
         $this->publishes([
-            __DIR__.'/config/contact.php' => config_path('contact.php'),
+            __DIR__.'/config/faq.php' => config_path('faq.php'),
             __DIR__.'/views' => config_path('views/vendor/contact'),
         ]);
     }

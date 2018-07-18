@@ -1,23 +1,23 @@
 {
-    "name": "jaykbh/contact-package",
-    "description": "This demo package will do some calculations",
+    "name": "sixturbo/support-package",
+    "description": "This package can doing most support thing",
     "authors": [
         {
-            "name": "Tony Lea",
-            "email": "tony@devdojo.com"
+            "name": "Beng",
+            "email": "jay_kbh@hotmail.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {},
     "autoload" : {
         "psr-4" : {
-            "Devdojo\\Contact\\" : "src/"
+            "Sixturbo\\Support\\" : "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Devdojo\\Contact\\ContactServiceProvider"
+                "Sixturbo\\Support\\SupportServiceProvider"
             ]
         }
     }
