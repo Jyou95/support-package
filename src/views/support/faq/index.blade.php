@@ -36,7 +36,9 @@
 				</div>
 			@endif
 		@empty
-			<h3>No data display.</h3>
+		<div class="col-sm-12">
+			<h3>No data display</h3>
+		</div>
 		@endforelse
 	</div>
 

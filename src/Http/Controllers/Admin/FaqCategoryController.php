@@ -28,7 +28,7 @@ class FaqCategoryController extends Controller
 
         $faq_category->title = $request->title;
         $faq_category->value = strtolower(str_replace(' ', '_', $request->title));
-        $faq_category->is_show = $request->is_show == on ? 1 : 0;
+        $faq_category->is_show = $request->is_show == 'on' ? 1 : 0;
         $faq_category->save();
 
         return redirect()->route('faq.category.admin.index');
