@@ -26,7 +26,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <img style="height: 45px; margin: 2px 0px;" src="{{ asset('images/logo.png') }}" alt="cointify logo">
+                <img style="height: 45px; margin: 2px 0px;" src="{{ asset('images/logo.png') }}">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
