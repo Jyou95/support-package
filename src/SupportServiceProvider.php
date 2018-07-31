@@ -24,7 +24,7 @@ class SupportServiceProvider extends ServiceProvider
     public function register()
     {
         //$this->app->make('Devdojo\Contact\Http\Controllers\ContactController');
-        $this->loadViewsFrom(__DIR__.'/views', 'faq');
+        $this->loadViewsFrom(resource_path('views/vendor'), 'faq');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->mergeConfigFrom(
             __DIR__.'/config/faq.php',
@@ -32,6 +32,7 @@ class SupportServiceProvider extends ServiceProvider
         );
         $this->publishes([
             __DIR__.'/config/faq.php' => config_path('faq.php'),
+            __DIR__.'/views' => base_path('resources/views/vendor'),
         ]);
     }
 }
