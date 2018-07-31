@@ -32,7 +32,6 @@ class SupportServiceProvider extends ServiceProvider
         );
         $this->publishes([
             __DIR__.'/config/faq.php' => config_path('faq.php'),
-            __DIR__.'/views' => config_path('views/vendor/contact'),
         ]);
     }
 }

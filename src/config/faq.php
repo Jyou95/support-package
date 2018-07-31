@@ -8,7 +8,11 @@ return [
         'prefix' => 'support',
     ],
 
-    'middleware' => [
+    'middleware-account' => [
+        'middleware' => [],
+    ],
+
+    'middleware-admin' => [
         'middleware' => [],
     ],
 
